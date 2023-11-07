@@ -1,6 +1,7 @@
 print("Bem vindo a Calculadora do Futuro")
 
-x = int(input("Digite o Primeiro valor: "))
-y = int(input("Digite o Segundo valor: "))
+x = float(input("Digite o Primeiro valor: "))
+y = float(input("Digite o Segundo valor: "))
+z = round(x/y,2)
 
-print ("A soma de",x,"e", y,"=",(x+y))
+print ("A divisão de",x,"e",y, "=",z)
