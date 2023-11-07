@@ -1,15 +1,15 @@
 # Perguntando ao usu o seu nome 
-name = input("Qual o seu nome? ")
+name = input("Qual o seu nome? ").strip().title()
+
+
+# separar nome e sobrenome de usuário
+first, last = name.split(" ")
 
 # Dizendo olá para o usuário 
-print  (f"Olá, {name}") 
+print  (f"Olá, {name}, seja bem vindo a aula de Python de Harvard") 
 
-# Outra forma de fazer ficar na mesma str
-    # print ("olá, ", end="")
-    # print (name)
+# Dizendo olá para o usuário com o nome
+print  (f"Prazer {first}, tudo certinho?")
 
-    # para gerar espaçãmento entre argumetnos na mesma str
-    # print ("hello,", name, sep=" ")
-
-    # Dizer o nome do usuário 
-    # print ("hello," , name)
+# Dizendo olá para o usuário com o sobrenome 
+print  (f"Como vai senhor(a), {last}") 

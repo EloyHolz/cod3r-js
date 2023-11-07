@@ -1,0 +1,1 @@
+# int, integer e similiares é o nome do tipo de dados que representa um número inteiro, sem frações ou parte decimal, podendo ser com ou sem sinal (positivo/negativo)
