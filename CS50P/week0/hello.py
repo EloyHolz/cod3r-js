@@ -2,7 +2,7 @@
 name = input("Qual o seu nome? ")
 
 # Dizendo olá para o usuário 
-print(f"Olá, {name}"Eloy) 
+print  (f"Olá, {name}") 
 
 # Outra forma de fazer ficar na mesma str
     # print ("olá, ", end="")
