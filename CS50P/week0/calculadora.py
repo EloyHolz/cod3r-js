@@ -1,7 +1,9 @@
-print("Bem vindo a Calculadora do Futuro")
+def main():
+        x = int(input("Qual o valor de X? "))
+        print("X ao quadrado é: ", quad(x))
 
-x = float(input("Digite o Primeiro valor: "))
-y = float(input("Digite o Segundo valor: "))
-z = round(x/y,2)
 
-print ("A divisão de",x,"e",y, "=",z)
+def quad(n):
+        return n * n
+
+main()
