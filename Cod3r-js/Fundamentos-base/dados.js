@@ -31,4 +31,4 @@ let idade = 31;
 let sal = 4.500;
 let chuva = true
 let comida = "Lasanha"
-console.log((typeof idade), (typeof sal), (typeof chuva), (typeof comida));
+console.log((typeof idade), (typeof sal), (typeof chuva), (typeof comida)); 
