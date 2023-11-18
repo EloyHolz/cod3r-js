@@ -19,7 +19,7 @@ console.log(pf);
 let valor = 19.90;
 let promo = 0.4; 
 
-console.log ("Promoção do dia =" , (valor * promo) , "R$");
+console.log ("batata do dia =" , (valor * promo) , "R$");
 
 
 // Tipos de dados aceitaveis em JS (principais )
@@ -32,3 +32,7 @@ let sal = 4.500;
 let chuva = true
 let comida = "Lasanha"
 console.log((typeof idade), (typeof sal), (typeof chuva), (typeof comida)); 
+
+
+var escola = "Cod3r"
+console.log(escola);
