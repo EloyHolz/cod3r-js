@@ -20,3 +20,14 @@ console.log('Escola '.concat(escola).concat("!"))
 
 // replace - troca um caractere por outro
 console.log(escola.replace(3,"e"))
+
+// Para separar uma string em um arei - > separar 1 grande elemento em 3 mini elementos, nesse caso separados pela ","
+console.log("Ana,Maria,Pedro".split(","))
+
+// Template String _ teve ser aberto com o simbolo da crase_pode quebrar linha
+const nome = "Rebecca"
+const concat = "Olá " + nome + "!"
+const Template = `
+    Olá 
+    ${nome}!`
+console.log(concat, Template)
