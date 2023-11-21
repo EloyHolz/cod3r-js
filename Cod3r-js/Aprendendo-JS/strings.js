@@ -25,9 +25,19 @@ console.log(escola.replace(3,"e"))
 console.log("Ana,Maria,Pedro".split(","))
 
 // Template String _ teve ser aberto com o simbolo da crase_pode quebrar linha
+// é compatível com expressões tb -> ex expressões matemáticas
+// o ${} sig que será interpretado tudo que estiver escrtio aqui dentro
 const nome = "Rebecca"
 const concat = "Olá " + nome + "!"
 const Template = `
     Olá 
     ${nome}!`
 console.log(concat, Template)
+
+// Expressões
+console.log(`1 + 1 = ${1+1}`)
+
+// Aprendendo sobre uma função arrow que foi atribuida a variável up -> possivel chamar uma função dentro de uma template string
+const up = texto => texto.toUpperCase()
+
+console.log(`Ei... ${up('cuidado!')}`)
