@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family:Arial, Helvetica, sans-serif ;
+            background-color: rgba(105,105,173);
+            color: white;
+            padding: 10px;
+        }
+        h1{
+            color: rgba(255,212,22);
+        }
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Olá, Mundo!</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit perspiciatis recusandae, deleniti provident, aspernatur ducimus</p>
+    </main>
+    <script>
+
+      var n1 = Number(window.prompt("Digite um Número: ")) //   o window.prompt retorna como string todo que for digitado
+
+      var n2 = Number(window.prompt("Agora digite um segundo Número: "))
+      var r = (n1 + n2) //  necessário fazer a conversão
+
+      window.alert(`A soma entre ${n1} e ${n2} é ${r}`)
+    // O + pode servir tanto para adição (number + number) quanto para concatenação (string + string)
+    
+    </script>
+</body>
+</html>
