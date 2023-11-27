@@ -4,8 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aprendendo DOM</title>
+    <style>
+        body{
+            background-color: rgb(68, 125, 199);
+            font: normal 16pt arial;
+            color: white;
+
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Iniciando Estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em Java Script</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+            /* Outras formas de selecionar elementos
+            - por Id = .getElementById() - tem q ter id
+            - por Class = .getElementsByClassName()[] - tem q ter class
+            - por Nome = .getElementsByName()[] - tem q ter a tag name o elemento
+            - por Seletor = .querySelector() ou querySelectorAll() -> aqui usa a sintax do css -> mais rapido pois cabe todos os outros nele (#pra id e . para classe)
+            */ 
+
+        var p1 = window.document.getElementsByTagName("p")[1] 
+        window.document.write('Está escrito assim: '+ p1.innerHTML)
+
+        // O [0] é pra selecionar o primeiro p, pois o 'get' pega mais de um elemento por regra -> enquanto elements tiver no plural, se nao especificar e houver mais de um ele nao mostra nada
+        // o que está dentro dos ( ) em getElementsByTagName é  o elemento ou variável que quer selecionar
+        // InnerText -> para o texto que está dentro do elemento, no caso o p1 ( apenas a tag mãe)
+        // InnerHTML -> pega tanto a tag mãe quanto as filhas
+
+        var corpo = window.document.body
+        p1.style.color = 'yellow'
+        corpo.style.background = 'black'
+
+        // outra forma de selecionar é usando a tag de estilo no JS
+
+        var d = window.document.querySelector('div#msg')
+        d.innerHTML = 'Estou aguardando...'
+        d.style.background = 'white'
+        d.style.color = 'black' 
+
+        
+    </script>
 </body>
 </html>
