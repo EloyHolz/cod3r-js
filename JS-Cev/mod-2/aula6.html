@@ -4,8 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos DOM</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            padding: 10px;
+        }
+        div#area {
+            background-color: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+        }
+    </style>
 </head>
 <body>
-    
+    <header></header>
+    <main>
+        <div id="area">
+            <p>Interaja...</p>
+        </div>
+    </main>
+    <footer></footer>
+    <script>
+        var a = window.document.querySelector("div#area");
+
+        a.addEventListener('mouseenter', entrou);
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseout', saiu)
+
+        function entrou() {
+            a.innerText = 'Entrou!';
+            a.style.background = 'blue';
+            a.style.color = 'white';
+        }
+
+        function clicar() {
+            a.innerText = "Clicou!";
+            a.style.background = 'red';
+            a.style.color = 'white';
+        }
+
+        function saiu() {
+            a.innerText = 'Saiu!';
+            a.style.background = 'yellow';
+            a.style.color = 'black';
+        }
+
+
+    </script>
 </body>
 </html>
+
+            <!-- Existe uma outra forma de fazer os eventos -> usando os Listenner (sem o on) -->
+        
+
+        <!-- // colocando a varriavel fora das funcoes, ele fica para as duas, mas colocando dentro ele fica apenas para a que ele ta -> mas colocar fora pde dar um problema na memoria -> ainda nao aprendi sobre isso -->
