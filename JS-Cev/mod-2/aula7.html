@@ -4,8 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos DOM II</title>
+    <style>
+
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16.5px;
+            padding: 5px;
+            color: white;
+        }
+        body{
+            background-color: rgba(0, 0, 0, 0.87);
+        }
+
+        h1{
+            font-size: 25px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        div#botoes input{
+            border-radius:5.5px;
+            border: 1px solid black;
+            color: black;
+            font-weight: bold;
+        }
+
+            input#botao:hover{
+                background-color: yellow;
+                color: black;
+                font-size: 18px;
+
+            }
+
+        div#res{
+            margin-top: 8px;
+            text-decoration: underline;
+            font-size: 18px;
+        }
+    </style>
 </head>
 <body>
-    
+    <main>
+        <h1>Somando Valores</h1>
+        <div id="botoes">
+            <input type="number" name="txt1" id="itxt1"> +
+            <input type="number" name="txt2" id="itxt2">
+            <input type="button" value="Somar" onclick="somar()" id="botao">
+        </div>
+        <div id="res">
+            <h2>Resultado</h2>
+        </div>
+    </main>
+    <script>
+        function somar() {
+            var tn1 = window.document.getElementById("itxt1")
+            var tn2 = window.document.querySelector("input#itxt2")
+            var res = window.document.querySelector("div#res")
+
+            // Vem como texto -> tem que converter para Number
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a<strong>${s}</strong>`
+        }
+    </script>
 </body>
 </html>
