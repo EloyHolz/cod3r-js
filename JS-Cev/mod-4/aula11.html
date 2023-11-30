@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidadenator</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: darkcyan;
+            color: white;
+        }
+        p#sinopse{
+            display: block
+        }
+        p{
+            padding: 10px;
+        }
+
+        p#pergunta{
+            display: inline-block;
+        }
+        
+        h1{
+            text-align: center;
+            margin-bottom: 30px;
+            margin-top: 20px;
+        }
+
+        input{
+            background-color: white;
+            color: black;
+            padding: 3px;
+            border-radius: 10PX;
+        }
+        div#nacio{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Descubra sua nacionalidade hoje!</h1>
+        <p id="sinopse">Escreva onde voce nasceu e diremos sua Nacionalidade!</p>
+
+        <p id="pergunta">Qual o País que você nasceu? <input type="text" name="pais" id="ipais"></p>
+        <input type="button" value="buscar" onclick="buscar()">
+
+        <div id="nacio"></div>
+    </main>
+    <script>
+        function buscar(){
+            var pais = window.document.querySelector("input#ipais")
+            var nacio = window.document.querySelector("div#nacio")
+            var res = pais.value.toLowerCase()
+            nacio.innerHTML = `Você nasceu no(a) ${pais.value}, logo você é:`
+            if (res === 'brasil') {
+                nacio.innerHTML += ' <strong> Brasileiro(a)</strong>'
+            } else if (res === 'eua') {
+                nacio.innerHTML += ' <strong>Estadunidense</strong>'
+            } else if (res === 'alemanha') {
+                nacio.innerHTML += ' <strong>Alemão</strong>'
+            } else{
+                nacio.innerHTML += '  <strong>Estrangeiro</strong>, em algum país kkk'
+            }
+        }
+    </script>
+</body>
+</html>
