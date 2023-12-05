@@ -25,6 +25,14 @@ main{
     width: 500px;
     margin: auto;
 }
+    main div {
+        text-align: center;
+        padding: 9px;
+    }
+
+        main div#msg{
+            font-size: 1.2em;
+        }
 
 footer{
     color: white;
