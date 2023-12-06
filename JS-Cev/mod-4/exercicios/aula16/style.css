@@ -25,6 +25,11 @@ main{
     width: 500px;
     margin: auto;
 }
+    div#res{
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
 
 footer{
     color: white;
