@@ -3,17 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo de Exercício I</title>
+    <title>Contador</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Título do Site</h1>
+        <h1>Vamos Contar - Seu contador particular</h1>
     </header>
     <main>
-        <p>teste</p>
-        <div></div>
-        <div></div>
+        <div id="perguntas">
+            <p> Inicio: <input type="number" name="inicio" id="iinicio"></p>
+            <p> Fim: <input type="number" name="fim" id="ifim"></p>
+            <p> Passo: <input type="number" name="passo" id="ipasso"></p>
+        </div>
+        <div id="botao">
+            <input type="button" value="Contar" onclick="contar()">
+        </div>
+        <div id="resultado">
+            <p>Aquecendo os Motores...</p>
+        </div>
     </main>
     <footer>
         <p>&copy;AgênciaONDS</p>
