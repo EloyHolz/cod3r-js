@@ -5,7 +5,7 @@ function contar(){
     var fim = document.getElementById('ifim')
     var res = document.getElementById('res')
 
-    if (ini.value.length == 0 || fim.value.length == 0 || passo.value.length == 0){
+    if (ini.value.length == 0 || fim.value.length == 0 || passo.value.length == 0) {
         window.alert('[ERRO] Faltam Elementos')
     } else {
         res.innerHTML = 'contando: '
