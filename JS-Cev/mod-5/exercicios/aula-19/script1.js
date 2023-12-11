@@ -1,22 +1,13 @@
 function contar(){
-    var ini = window.document.querySelector('div#iinico')
-    var pas = window.document.querySelector("div#ipasso")
-    var fim = window.document.querySelector("div#ifim")
-    var res = window.document.querySelector("div#resultado")
+    let  ini = window.document.querySelector('div#iinico')
+    let  pas = window.document.querySelector("div#ipasso")
+    let fim = window.document.querySelector("div#ifim")
+    let  res = window.document.querySelector("div#resultado")
 
-
-    if (fim==0){
-        window.alert("[ERRO] O Fim não pode ser igual a 0! Altere sua opção.");
-        return
-    }
-    if (pas==0){
-        window.alert("[ERRO] O Passo não pode ser igual a 0! Altere sua opção.");
-        
+    if(ini.value.length==0 || fim.value.length==0 || pas.value.length==0){
+        window.alert("[Erro] Faltam dados")
+    } else{
+        window.alert("Tudo ok!")
     }
 
-    for (var i = ini; i<=fim; i+= pas){
-        res += i + ''
-    }
-
-    res.innerHTML (`${res}`)
 }
