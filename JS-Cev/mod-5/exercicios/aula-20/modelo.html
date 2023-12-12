@@ -3,17 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo de Exercício I</title>
+    <title>Tabuada</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Título do Site</h1>
+        <h1>Tabuadinator</h1>
     </header>
     <main>
-        <p>teste</p>
-        <div></div>
-        <div></div>
+        <div id="inicio">
+            <p>Número: <input type="number" name="num" id="inum"> <input type="button" value="Gerar Tabuada" onclick="tabuada()" id="but"></p>
+        </div>
+
+        <div id="resultado">
+            <select name="tab" id="itab" size="10">
+                <option value="txt">Digite um número acima</option>
+            </select>
+            <!-- em select usasse option para criar opções -->
+        </div>
     </main>
     <footer>
         <p>&copy;AgênciaONDS</p>
