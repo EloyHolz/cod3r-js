@@ -8,6 +8,7 @@ function tabuada(){
         let n = Number(num.value)
         tab.innerHTML = ''
         // para limpar a area de tabuada antes de começar
+        
         for (let c = 1; c <= 10; c++){
             let op = document.createElement('option')
             op.innerHTML= `${n} x ${c} x ${n*c}`
