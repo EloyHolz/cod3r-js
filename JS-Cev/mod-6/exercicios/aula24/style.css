@@ -21,17 +21,18 @@ main{
     background-color: white;
     border-radius: 15px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.397);
-    padding: 15px;
-    width: 500px;
+    padding: 20px;
+    width: 600px;
+    
     margin: auto;
     
 }
 
     main div {
         padding: 6px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      
+        
+        /* align-items: center; */
         
 
     }
@@ -53,36 +54,53 @@ main{
        border-radius: 15px;
        border-color: rgb(59, 59, 230);
        font-size: 14px;
-    }
-    main input#but:hover{
-        background-color: white;
-        color:rgb(59, 59, 230) ;
+       width: 20%;
+       margin-left: 20px;
     }
 
+        main input#but:hover{
+            background-color: white;
+            color:rgb(59, 59, 230) ;
+        }
+    
+    main div#tabela{
+        text-align: center;
+    }
+    
     main select {
         padding: 5px;
         font-size: 15px;
         width: 70%;
+        justify-content: center; 
+        
     }
         main select>option{
-            /* text-align: center; */
             padding: 1px;
         }
     
     main input#final{
-        background-color: rgb(59, 59, 230);
-        color: white;
-        padding: 5px;
-        border-radius: 15px;
-        border-color: rgb(59, 59, 230);
-        width: 50%;
-        font-size: 14px;
+    background-color: rgb(59, 59, 230);
+    color: white;
+    padding: 5px;
+    border-radius: 15px;
+    border-color: rgb(59, 59, 230);
+    width: 50%;
+    font-size: 14px;
+    margin-top: 20px;
     }
 
-    main input#final:hover{
-        background-color: white;
-        color:rgb(59, 59, 230) ;
+        main input#final:hover{
+            background-color: white;
+            color:rgb(59, 59, 230) ;
+        } 
+
+    main div#resultado {
+        padding: 5px;
+        margin-top: 8px;
+        font-size: 17px;
+        line-height: 26px;
     }
+    
    
 footer{
     color: white;
@@ -91,3 +109,4 @@ footer{
     text-align: center;
     margin-top: 40px;
 }
+
