@@ -22,7 +22,7 @@ function inLista(n, l){
 
 function adicionar(){
    if (isNumero(num.value) && !inLista(num.value, valores)){
-    window.alert("Tudo Tranquilo Chefe!")
+    window.alert ("Tudo Tranquilo Chefe!")
    } else {
     window.alert ('[ERRO] Valor inválido ou já adicionado')
    }
@@ -31,4 +31,4 @@ function adicionar(){
 
 function finalizar(){
 
-}
+} 
