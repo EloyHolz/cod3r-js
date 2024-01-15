@@ -1,4 +1,4 @@
-let isAtivo = false
+isAtivo = false
 console.log(isAtivo)
 
 isAtivo = true   
@@ -25,3 +25,10 @@ console.log(!!null)
 console.log(!!NaN)
 console.log(!!undefined)
 console.log(!!(isAtivo = false))
+
+console.log("para finalizar...")
+console.log(!!('' || null || 0 || ""))
+
+let  nome = ''
+// Ele vai escrever o que for verdadeiro -> caso nao tenha nada no nome, siginifica que é falso, logo escreveria a outra opção (|| = ou)
+console.log(nome || "Desconhecido")
