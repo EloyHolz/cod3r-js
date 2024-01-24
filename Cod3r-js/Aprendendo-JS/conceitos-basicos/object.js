@@ -18,3 +18,34 @@ const prod2 = {
 }
 
 console.log(prod2)
+
+/*
+Instancia, classe e objeto
+     a finalidade da instância em JavaScript é criar objetos únicos com base em um modelo (ou classe) =  A instância entra aqui para ajudar a criar personagens únicos a partir de um modelo geral.
+
+     Modelo (Classe): Imagine que a classe é como o plano para fazer carros. Ela define o que todos os carros devem ter, como a marca e o modelo.
+
+        Instância: Agora, a instância é como um carro real que foi feito seguindo esse plano. Digamos que você tenha muitos carros diferentes, cada um com uma marca e modelo específicos, mas todos construídos a partir da mesma ideia geral.
+
+        Essa abordagem é útil porque, em vez de reescrever o código para cada carro individualmente, você pode usar a classe como um modelo e criar quantas instâncias (carros) únicas você precisar.
+
+        Então, a finalidade da instância é permitir que você crie objetos com características específicas, mas seguindo as diretrizes definidas na classe, economizando tempo e facilitando a organização do código. Isso é especialmente útil quando você está lidando com muitos itens semelhantes, como personagens em um jogo, ou, no caso de um advogado digital, talvez diferentes tipos de contratos ou documentos.
+*/ 
+// Definindo uma classe chamada Carro
+class Carro {
+    constructor(marca, modelo) {
+      this.marca = marca;
+      this.modelo = modelo;
+    }
+  
+    exibirInfo() {
+      console.log(`Carro: ${this.marca} ${this.modelo}`);
+    }
+  }
+  
+  // Instanciando um objeto da classe Carro
+  const meuCarro = new Carro("Toyota", "Corolla");
+  
+  // Chamando o método da instância
+  meuCarro.exibirInfo();
+  
