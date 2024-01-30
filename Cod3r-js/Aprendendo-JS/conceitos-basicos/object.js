@@ -48,4 +48,12 @@ class Carro {
   
   // Chamando o método da instância
   meuCarro.exibirInfo();
-  
+
+// Aprendendo sobre Notação ponto -> serve para acessar propriedades, chamar ou acessar de um objeto
+console.log(Math.ceil(6.2))
+
+const obj1 = {}
+obj1.nome = "Bola"
+obj1['idade'] = '56 anos'
+console.log(obj1.nome)
+console.log(obj1.idade)
