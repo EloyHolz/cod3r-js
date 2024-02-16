@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+
+*{
+    background-color: black;
+}
+
+selector{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.checkbox{
+    position: absolute;
+    opacity: 0;
+}
+
+.label{
+    width: 50px;
+    height: 25px;
+    background-color: white;
+}
